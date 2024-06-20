@@ -28,6 +28,12 @@ dependencies {
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
 }
 
+tasks.jar {
+	manifest {
+		attributes["Main-Class"] = "/src/main/java/me/dio/santander_backend2024/Application.java"
+	}
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }

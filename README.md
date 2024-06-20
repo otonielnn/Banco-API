@@ -1,6 +1,6 @@
 # Santander Backend 2024
 
-Java RESTful API criada para a Santander 2024 - Backend com Java.
+Java RESTful API criada para o Santander 2024 - Backend com Java.
 
 ## Principais Tecnologias
  - **Java 21**: Utilizaremos a versão LTS mais recente do Java para tirar vantagem das últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
