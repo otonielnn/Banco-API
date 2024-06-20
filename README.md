@@ -54,6 +54,25 @@ classDiagram
 ```
 
 ## Como inicializar o projeto
-> para incializar o projeto usando o profile de dev `application-dev.yml` rode o commando:
+- Para incializar o projeto usando o profile de dev `application-dev.yml` rode o commando:
 
->  `./gradlew bootRun --args='--spring.profiles.active=dev'`
+    >  `./gradlew bootRun --args='--spring.profiles.active=dev'`
+
+- Para inicializar usando o profile de produção `application-prd.yml` rode o commando:
+  >  `./gradlew bootRun --args='--spring.profiles.active=dev'`
+
+   obs: vale lembrar que no `application-prd.yml` estou utilizando variaveis de ambiente do sistema para passa as credencias do banco de dados PostgreSQL que está rodando no railway. Recomendo a criação de um arquivo .sh para carregar as credenciais apenas no momento de inicializar a applicação.
+
+  `env-vars.sh`
+  ```
+  #!/bin/bash
+  export PGHOST=<host-do-seu-banco>
+  export PGPORT=<porta-do-seu-banco>
+  export PGDATABASE=<nome-do-seu-banco>
+  export PGUSER=<user-do-seu-banco>
+  export PGPASSWORD=<senha-do-seu-banco>
+  ```
+  No terminal rode o commando:
+  > source env-vars.sh
+
+  para carregar as variáveis de ambiente durante a instância do terminais.
