@@ -1,8 +1,9 @@
 package me.dio.santander_backend2024.service.impl;
 
 import org.springframework.stereotype.Service;
-import me.dio.santander_backend2024.model.User;
-import me.dio.santander_backend2024.repository.UserRepository;
+
+import me.dio.santander_backend2024.domain.model.User;
+import me.dio.santander_backend2024.domain.repository.UserRepository;
 import me.dio.santander_backend2024.service.UserService;
 import java.util.NoSuchElementException;
 

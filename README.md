@@ -52,3 +52,8 @@ classDiagram
   User "1" *-- "1" Card
   User "1" *-- "N" News
 ```
+
+## Como inicializar o projeto
+> para incializar o projeto usando o profile de dev `application-dev.yml` rode o commando:
+
+>  `./gradlew bootRun --args='--spring.profiles.active=dev'`
