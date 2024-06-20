@@ -6,5 +6,5 @@ import me.dio.santander_backend2024.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
-    
+    boolean existsByAccountNumber(String accountNumber);
 }
